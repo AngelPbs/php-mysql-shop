@@ -1,0 +1,213 @@
+@font-face {
+  font-family: Montserrat-bold;
+  src: url(../fonts/MontserratAlternates-Bold.otf);
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/MontserratAlternates-Medium.otf);
+}
+body {
+  background-color: white;
+  margin: 0; /* Remover margens padrão do corpo */
+  padding: 0; /* Remover preenchimentos padrão do corpo */
+  background-image: url(../imagens/cesta.avif);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+
+  background-size: contain;
+  display: flex; /* Usar flexbox para centralizar o conteúdo verticalmente */
+  flex-direction: column;
+  justify-content: space-between; /* Centralizar horizontalmente */
+
+  min-height: 100vh; /* Garantir que a altura do corpo seja pelo menos 100% da altura da tela */
+}
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+}
+nav li {
+  list-style: none;
+  padding: 20px;
+}
+nav li a {
+  text-decoration: none;
+}
+.paginas {
+  border-left: 2px solid rgb(235, 152, 0);
+  color: black;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  font-family: Montserrat;
+}
+
+#email {
+  font-size: 13px;
+}
+#morada {
+  margin-left: 20px;
+}
+.social-media {
+  color: black;
+  display: flex;
+  align-items: center;
+}
+
+#mercearia_span {
+  margin-left: 20px;
+  font-family: Montserrat-bold;
+  font-weight: 800;
+  padding: 5px;
+}
+.fa-circle {
+  font-size: 5px;
+  padding-right: 5px;
+  margin: 0 2px;
+  vertical-align: middle;
+}
+
+#master-span {
+  font-size: 12px;
+  color: rgb(235, 152, 0);
+}
+
+.rounded-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  font-size: 13px;
+  border-radius: 50%;
+}
+.rounded-icon-fb {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: blue;
+  color: white;
+  border-radius: 50%;
+  font-size: 25px;
+}
+.rounded-icon-inst {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  font-size: 18px;
+  border-radius: 50%;
+  background-color: #ff00bf;
+  color: rgb(255, 255, 255);
+  font-weight: 900px;
+}
+
+.fa-phone {
+  background-color: rgb(235, 198, 130);
+  color: white;
+  font-size: 15px;
+}
+
+.img {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.img img {
+  width: 200px;
+  height: auto;
+}
+
+.logos {
+  margin-left: 20px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: rgb(21, 21, 21);
+}
+
+.contact-icon {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+#dot {
+  display: flex;
+  align-items: center;
+}
+
+.contact-icon {
+  margin-left: 10px;
+}
+
+.slogan {
+  margin-bottom: 10%;
+  margin-left: 15%;
+  font-family: montserrat;
+  font-size: 25px;
+  color: rgb(235, 152, 0);
+}
+
+#adminpage {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 2%;
+  margin-right: 5%;
+  text-decoration: non;
+}
+
+#adminpage a {
+  color: orange;
+  text-decoration: none;
+}
+
+/*            MEDIA                  */
+
+@media (max-width: 1050px) {
+  nav {
+    text-align: center;
+  }
+
+  .slogan {
+    color: rgb(49, 53, 88);
+    position: absolute;
+    top: 100px;
+  }
+  #dot {
+    margin-bottom: 10px;
+  }
+  #adminpage {
+    top: 0;
+  }
+}
+@media (max-width: 730px) {
+  body {
+    background-image: url(../imagens/cesta.avif);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .social-media {
+    display: flex;
+    flex-direction: column;
+  }
+  .social-media img {
+    display: none;
+  }
+  .slogan {
+    text-align: center;
+    margin-right: 10%;
+  }
+}
