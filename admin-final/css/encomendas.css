@@ -1,0 +1,137 @@
+@font-face {
+  font-family: monteserratBold;
+  src: url(../../fonts/MontserratAlternates-Bold.otf);
+}
+body {
+  background-color: #ffffe0;
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10%;
+}
+table {
+  color: darkblue;
+  background-color: #f3dfa6;
+  border: none;
+  border-radius: 30px;
+  text-align: center;
+}
+table th {
+  padding: 25px;
+  border: none;
+}
+table td {
+  padding: 10px;
+  border: none;
+}
+a {
+  text-decoration: none;
+  color: red;
+}
+
+nav {
+  background-color: #ffffe0;
+  color: white;
+}
+nav ul li a {
+  font-family: monteserratBold;
+  text-decoration: none;
+  color: orange;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
+}
+
+.logo img {
+  width: 130px;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 30px;
+  height: 4px;
+  margin: 4px 0;
+  background-color: orange;
+  border-radius: 10px;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+}
+
+.menu li {
+  margin: 0 10px;
+}
+
+@media (max-width: 850px) {
+  .menu-toggle {
+    display: flex;
+  }
+  .menu {
+    display: none;
+    flex-direction: column;
+    background-color: #444;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .menu.active {
+    display: flex;
+    position: absolute;
+    top: -10px;
+    left: 10%;
+    text-align: center;
+    background-color: #ffffe0;
+  }
+  .menu.active li {
+    text-align: center;
+    width: 60%;
+  }
+
+  .table-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  table {
+    margin: 0;
+    width: 300px;
+  }
+  .table-row-head {
+    display: none;
+  }
+  tr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+
+    margin: 10px 0;
+  }
+
+  td {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .eliminar-encomenda {
+    text-align: center;
+  }
+}

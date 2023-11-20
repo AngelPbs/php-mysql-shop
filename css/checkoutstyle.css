@@ -1,0 +1,109 @@
+@font-face {
+  font-family: monteserratBold;
+  src: url(../fonts/MontserratAlternates-Bold.otf);
+}
+
+body {
+  background-color: #ffffe0;
+}
+h1 {
+  text-align: center;
+  color: orange;
+}
+.navbar {
+  background-color: #ffffe0;
+
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 15px;
+}
+.navbar a {
+  font-family: monteserratBold;
+  text-decoration: none;
+  color: orange;
+  font-size: 20px;
+}
+
+.container {
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+form {
+  width: 400px;
+  border: 1px solid #f3dfa6;
+  background-color: #f3dfa6;
+  color: black;
+  padding: 25px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+form input {
+  margin-bottom: 10px;
+  margin-top: 5px;
+  text-align: center;
+  width: 80%;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+}
+
+table {
+  background-color: #f3dfa6;
+  border: none;
+  border-radius: 30px;
+  text-align: center;
+}
+table th {
+  padding: 25px;
+  border: none;
+}
+table td {
+  padding: 10px;
+  border: none;
+}
+#total {
+  text-align: end;
+}
+#encomenda {
+  background-color: black;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+/*          MEDIA                      */
+@media (max-width: 960px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  form {
+    margin-right: 10%;
+  }
+  table {
+    margin-right: 10%;
+  }
+}
+@media (max-width: 460px) {
+  form {
+    width: 80%;
+  }
+  table {
+    margin-right: 10%;
+  }
+  table th {
+    padding: 5px;
+    border: none;
+  }
+  table td {
+    border: none;
+  }
+}
